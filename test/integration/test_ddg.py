@@ -12,7 +12,7 @@ def test_true():
 
 
 def test_ddg0():
-    resp = requests.get(url_ddg + "/?q=George Washington&format=json")
+    resp = requests.get(url_ddg + "/?q="Presidents of The United States"&format=json")
     rsp_data = resp.json()
-    assert "George Washington" in rsp_data["RelatedTopics"]
+    assert "Presidents of the United States" in rsp_data["RelatedTopics"]
 
