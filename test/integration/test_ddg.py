@@ -12,7 +12,7 @@ def test_true():
 
 
 def test_ddg0():
-    resp = requests.get(url_ddg + "/?q=PresidentsoftheUnitedStates&format=json")
+    resp = requests.get(url_ddg + "/?q=DuckDuckGo&format=json")
     rsp_data = resp.json()
     assert "DuckDuckGo" in rsp_data["RelatedTopics"]
 
