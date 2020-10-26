@@ -8,6 +8,8 @@ def test_pres():
     rsp_data = resp.json()
     if "Lincoln" in rsp_data ['RelatedTopics']:
         assert True
+    if "Taylor" in rsp_data['RelatedTopics']:
+        assert True
     
 
 
