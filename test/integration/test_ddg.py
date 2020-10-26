@@ -13,8 +13,8 @@ def test_true():
 def test_pres():
     resp = requests.get(url_ddg + "/?q=Presidents+Of+The+United+States&format=json&pretty=1")
     rsp_data = resp.json()
-    if "George Washingon" in rsp_data ["RelatedTopics"]
-        assert True
+    assert "George Washingon" in rsp_data ["Heading"]
+        
     
 
 def test_ddg0():
